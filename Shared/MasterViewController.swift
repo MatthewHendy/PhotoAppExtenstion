@@ -9,6 +9,7 @@
 
 import UIKit
 import Photos
+import Alamofire
 
 class MasterViewController: UITableViewController {
 
@@ -67,7 +68,9 @@ class MasterViewController: UITableViewController {
 
     @objc func addAlbum(_ sender: AnyObject) {
 
-        
+        let vc = LinksTableVC(nibName: "LinksTable", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        //https://www.reddit.com/r/Austin/top.json
         
         
         /*
