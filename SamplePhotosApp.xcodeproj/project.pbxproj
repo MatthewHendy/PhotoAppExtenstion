@@ -22,6 +22,7 @@
 		11E1BB9C1CF1371A0057E18F /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1BB9A1CF1371A0057E18F /* GridViewCell.swift */; };
 		11E1BB9E1CF137450057E18F /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1BB9D1CF137450057E18F /* AssetViewController.swift */; };
 		11E1BB9F1CF137450057E18F /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1BB9D1CF137450057E18F /* AssetViewController.swift */; };
+		2484FEBD328434B5C9C7C0ED /* Pods_SamplePhotosApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2335BFE55BDB3ED6582EEE7D /* Pods_SamplePhotosApp_iOS.framework */; };
 		2CC7953D7DA1DA98905E1EEA /* Pods_SamplePhotosApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE592911C5719A71B6335CB /* Pods_SamplePhotosApp_iOS.framework */; };
 		FAA324BC22A036B700AFD830 /* LinksTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA324BB22A036B700AFD830 /* LinksTableVC.swift */; };
 		FAA324BE22A03A0400AFD830 /* LinksTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA324BD22A03A0400AFD830 /* LinksTable.xib */; };
@@ -43,6 +44,7 @@
 		119E70161CF3CC1700F01BF5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11E1BB9A1CF1371A0057E18F /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 		11E1BB9D1CF137450057E18F /* AssetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2335BFE55BDB3ED6582EEE7D /* Pods_SamplePhotosApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamplePhotosApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE592911C5719A71B6335CB /* Pods_SamplePhotosApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SamplePhotosApp_iOS.framework; path = "/Users/macbook/Library/Developer/Xcode/DerivedData/SamplePhotosApp-ckivsdmquqyiuxcgfpwhtxepyslb/Build/Products/Debug-iphoneos/Pods_SamplePhotosApp_iOS.framework"; sourceTree = "<absolute>"; };
 		66681C7AC8634AB90F03B532 /* Pods-SamplePhotosApp iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamplePhotosApp iOS.release.xcconfig"; path = "Target Support Files/Pods-SamplePhotosApp iOS/Pods-SamplePhotosApp iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DFE6ED011B39D275F7C5137B /* Pods-SamplePhotosApp iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamplePhotosApp iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamplePhotosApp iOS/Pods-SamplePhotosApp iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC7953D7DA1DA98905E1EEA /* Pods_SamplePhotosApp_iOS.framework in Frameworks */,
+				2484FEBD328434B5C9C7C0ED /* Pods_SamplePhotosApp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				3AE592911C5719A71B6335CB /* Pods_SamplePhotosApp_iOS.framework */,
+				2335BFE55BDB3ED6582EEE7D /* Pods_SamplePhotosApp_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
