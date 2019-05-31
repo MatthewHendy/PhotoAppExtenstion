@@ -17,7 +17,9 @@ class LinksTableCell: UITableViewCell, UITextViewDelegate {
     @IBOutlet weak var linkButton: UIButton!
     
     override func prepareForReuse() {
-        
+        titleString = ""
+        urlString = ""
+        linkButton.setTitle(titleString, for: UIControl.State.normal)
     }
     
     public func configureWith(title: String, url: String) {

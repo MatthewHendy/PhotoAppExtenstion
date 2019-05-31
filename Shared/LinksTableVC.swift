@@ -118,17 +118,5 @@ open class LinksTableVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         return cell!
     }
-    
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        /*let article = ArticleArray[indexPath.row]
-        let url = article.url
-        
-        UIApplication.shared.open(URL(string:url)!, options: [:]) { (bool) in
-            //do code
-        }*/
-
-    }
-    
 
 }
