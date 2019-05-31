@@ -24,7 +24,7 @@ class LinksTableCell: UITableViewCell, UITextViewDelegate {
         titleString = title
         urlString = url
         
-        linkButton.setTitle("Alpha Beta Gamme Delta Theta Eta Sheta Capsilon Yolo Tommy Bahama Tau Pho Rae Do La So Cholo Swaggy P JaiWolf TechnoFreak Drop Kid Cudi Alpha Beta Gamme Delta Theta Eta Sheta Capsilon Yolo Tommy Bahama Tau Pho Rae Do La So Cholo Swaggy P JaiWolf TechnoFreak Drop Kid Cudi Alpha Beta Gamme Delta Theta Eta Sheta Capsilon Yolo Tommy Bahama Tau Pho Rae Do La So Cholo Swaggy P JaiWolf TechnoFreak Drop Kid Cudi", for: UIControl.State.normal)
+        linkButton.setTitle(titleString, for: UIControl.State.normal)
         //linkButton.titleLabel?.adjustsFontSizeToFitWidth = true
         linkButton.titleLabel?.numberOfLines = 0
         linkButton.sizeToFit()
