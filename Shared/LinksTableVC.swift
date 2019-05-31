@@ -21,7 +21,8 @@ open class LinksTableVC: UIViewController, UITableViewDelegate, UITableViewDataS
     override open func viewDidLoad() {
         super.viewDidLoad()
         
-        table.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseId)
+        table.register(UINib.init(nibName: "LinksTableCell", bundle: nil), forCellReuseIdentifier: cellReuseId)
+        //table.register(LinksTableCell.self, forCellReuseIdentifier: cellReuseId)
         
         table.delegate = self
         table.dataSource = self
@@ -69,6 +70,7 @@ open class LinksTableVC: UIViewController, UITableViewDelegate, UITableViewDataS
                 for articleJson in articlesArray {
                     let castedArticleJson:[String:Any] = articleJson as! [String:Any]
                     let articleDictionary:[String:Any] = castedArticleJson["data"] as! [String : Any]
+                    print(articleDictionary)
                     let art:Article = Article.init(json: articleDictionary)!
                     self.ArticleArray.append(art)
                     
@@ -104,14 +106,14 @@ open class LinksTableVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = UITableViewCell.init(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellReuseId)
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellReuseId)
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellReuseId) as? LinksTableCell
             
         if(cell == nil) {
-            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellReuseId)
+            cell = LinksTableCell()
         }
         
         if let art:Article = ArticleArray[indexPath.row] {
-            cell?.textLabel?.text = art.title
+            cell?.configureWith(title: art.title, url: art.url)
         }
         
         return cell!
@@ -119,12 +121,12 @@ open class LinksTableVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let article = ArticleArray[indexPath.row]
+        /*let article = ArticleArray[indexPath.row]
         let url = article.url
         
         UIApplication.shared.open(URL(string:url)!, options: [:]) { (bool) in
             //do code
-        }
+        }*/
 
     }
     

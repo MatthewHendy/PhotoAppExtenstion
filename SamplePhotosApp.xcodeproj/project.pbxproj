@@ -24,6 +24,8 @@
 		11E1BB9F1CF137450057E18F /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1BB9D1CF137450057E18F /* AssetViewController.swift */; };
 		2484FEBD328434B5C9C7C0ED /* Pods_SamplePhotosApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2335BFE55BDB3ED6582EEE7D /* Pods_SamplePhotosApp_iOS.framework */; };
 		2CC7953D7DA1DA98905E1EEA /* Pods_SamplePhotosApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE592911C5719A71B6335CB /* Pods_SamplePhotosApp_iOS.framework */; };
+		FA6C710322A088F300B33E01 /* LinksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C710222A088F300B33E01 /* LinksTableCell.swift */; };
+		FA6C710522A0894E00B33E01 /* LinksTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6C710422A0894E00B33E01 /* LinksTableCell.xib */; };
 		FAA324BC22A036B700AFD830 /* LinksTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA324BB22A036B700AFD830 /* LinksTableVC.swift */; };
 		FAA324BE22A03A0400AFD830 /* LinksTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA324BD22A03A0400AFD830 /* LinksTable.xib */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		3AE592911C5719A71B6335CB /* Pods_SamplePhotosApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SamplePhotosApp_iOS.framework; path = "/Users/macbook/Library/Developer/Xcode/DerivedData/SamplePhotosApp-ckivsdmquqyiuxcgfpwhtxepyslb/Build/Products/Debug-iphoneos/Pods_SamplePhotosApp_iOS.framework"; sourceTree = "<absolute>"; };
 		66681C7AC8634AB90F03B532 /* Pods-SamplePhotosApp iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamplePhotosApp iOS.release.xcconfig"; path = "Target Support Files/Pods-SamplePhotosApp iOS/Pods-SamplePhotosApp iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DFE6ED011B39D275F7C5137B /* Pods-SamplePhotosApp iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamplePhotosApp iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamplePhotosApp iOS/Pods-SamplePhotosApp iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FA6C710222A088F300B33E01 /* LinksTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableCell.swift; sourceTree = "<group>"; };
+		FA6C710422A0894E00B33E01 /* LinksTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinksTableCell.xib; sourceTree = "<group>"; };
 		FAA324BB22A036B700AFD830 /* LinksTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableVC.swift; sourceTree = "<group>"; };
 		FAA324BD22A03A0400AFD830 /* LinksTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinksTable.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +129,8 @@
 				11E1BB9D1CF137450057E18F /* AssetViewController.swift */,
 				FAA324BB22A036B700AFD830 /* LinksTableVC.swift */,
 				FAA324BD22A03A0400AFD830 /* LinksTable.xib */,
+				FA6C710222A088F300B33E01 /* LinksTableCell.swift */,
+				FA6C710422A0894E00B33E01 /* LinksTableCell.xib */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				118FE1221CEF0525004F2F51 /* LaunchScreen.storyboard in Resources */,
 				118FE11F1CEF0525004F2F51 /* Assets.xcassets in Resources */,
 				118FE11D1CEF0525004F2F51 /* Main.storyboard in Resources */,
+				FA6C710522A0894E00B33E01 /* LinksTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6C710322A088F300B33E01 /* LinksTableCell.swift in Sources */,
 				11E1BB9E1CF137450057E18F /* AssetViewController.swift in Sources */,
 				11E1BB9B1CF1371A0057E18F /* GridViewCell.swift in Sources */,
 				118FE11A1CEF0525004F2F51 /* AssetGridViewController.swift in Sources */,
