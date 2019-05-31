@@ -70,7 +70,6 @@ open class LinksTableVC: UIViewController, UITableViewDelegate, UITableViewDataS
                 for articleJson in articlesArray {
                     let castedArticleJson:[String:Any] = articleJson as! [String:Any]
                     let articleDictionary:[String:Any] = castedArticleJson["data"] as! [String : Any]
-                    print(articleDictionary)
                     let art:Article = Article.init(json: articleDictionary)!
                     self.ArticleArray.append(art)
                     

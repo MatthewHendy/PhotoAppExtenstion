@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LinksTableCell: UITableViewCell, UITextViewDelegate {
+class LinksTableCell: UITableViewCell {
     
     var titleString:String = ""
     var urlString:String = ""
@@ -26,9 +26,9 @@ class LinksTableCell: UITableViewCell, UITextViewDelegate {
         titleString = title
         urlString = url
         
+        linkButton.titleLabel?.numberOfLines = 0
         linkButton.setTitle(titleString, for: UIControl.State.normal)
         //linkButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        linkButton.titleLabel?.numberOfLines = 0
         linkButton.sizeToFit()
         
     }
